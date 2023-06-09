@@ -1,0 +1,25 @@
+name: Weekly Scraping Badminton Ranking
+
+on:
+  schedule:
+    - cron: '0 9 * * TUE'  # setiap hari Selasa pukul 09.00
+
+
+jobs:
+  scrape:
+    runs-on: macos-latest
+    env:
+      ATLAS_URL: ${{ secrets.ATLAS_URL }}
+      ATLAS_COLLECTION: ${{ secrets.ATLAS_COLLECTION }}
+      ATLAS_DB: ${{ secrets.ATLAS_DB }}
+    steps:
+      - name: Start time
+        run: echo "$(date) ** $(TZ=Asia/Jakarta date)"
+      - uses: actions/checkout@v3
+      - uses: r-lib/actions/setup-r@v2
+      - name: Install mongolite package
+        run: Rscript -e 'install.packages("mongolite", dependencies = TRUE)'
+      - name: Install rvest package
+        run: Rscript -e 'install.packages("rvest", dependencies = TRUE)'        
+      - name: Scrape data 
+        run: Rscript scrape.R
