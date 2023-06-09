@@ -2,7 +2,7 @@ name: Weekly Scraping Badminton Ranking
 
 on:
   schedule:
-    - cron: '30 * * * *'  # Nyoba setiap jam
+    - cron: '0 * * * *'  # Nyoba setiap jam
 
 
 jobs:
