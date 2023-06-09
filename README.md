@@ -18,12 +18,11 @@ Berikut ini adalah contoh dokumen pada koleksi MongoDB yang sudah tersimpan
 
 ```
 {"_id":
-  {"$oid":"64748315df0bae6a4b05efd1"},
-  "no": {
-    "$numberDouble":"2.0"
-  },
-  "cases":"6,806,288",
-  "deaths":"161,739",
-  "recovered":"6,631,118"
+  {"$Objectid":"6482fd7e7f8e20b45c05b0c1"},
+  "Ranking": "1",
+  "Nama":"[DEN] Viktor AXELSEN",
+  "Skor":"103005",
+  "Negara":"Denmark",
+  "Kategori":"Tunggal Putra"
 }
 ```
