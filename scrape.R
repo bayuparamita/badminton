@@ -26,4 +26,3 @@ message("Store data frame into mongo cloud")
 atlas$insert(pemain)
 
 rm(atlas)
-atlas$disconnect()
