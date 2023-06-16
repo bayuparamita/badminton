@@ -18,7 +18,7 @@ Berikut ini adalah contoh dokumen pada koleksi MongoDB yang sudah tersimpan
 
 ```
 {"_id":
-  {"$Objectid":"6482fd7e7f8e20b45c05b0c1"},
+  {"$oid":"6482fd7e7f8e20b45c05b0c1"},
   "Ranking": "1",
   "Nama":"[DEN] Viktor AXELSEN",
   "Skor":"103005",
