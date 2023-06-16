@@ -9,7 +9,7 @@ Data Peringkat Dunia Bulutangkis diperoleh dari web https://bwf.tournamentsoftwa
 4. Sepuluh ganda putri terbaik dunia
 5. Sepuluh ganda campuran terbaik dunia
 
-Setiap data terdiri dari ranking, nama, poin, dan negara.
+Data terdiri dari ranking, nama, poin, dan negara. Data yang sudah diperoleh diberi kategori.
 Peringkat dunia bulu tangkis diperbarui setiap hari Selasa. Karena itu, data disalin setiap hari Selasa.
 
 ## Contoh dokumen
